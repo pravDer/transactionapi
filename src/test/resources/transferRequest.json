@@ -1,0 +1,8 @@
+{
+  "toAccountNumber" : "acct_123",
+  "fromAccountNumber" : "acct_456",
+  "money" : {
+    "balance" : "1000.0",
+    "currency" : "USD"
+  }
+}

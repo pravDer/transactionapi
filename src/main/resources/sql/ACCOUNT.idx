@@ -1,0 +1,2 @@
+alter table ACCOUNT add constraint ACCOUNT_PK primary key (id);
+

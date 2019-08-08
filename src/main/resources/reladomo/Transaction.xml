@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<MithraObject objectType="transactional"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="mithraobject.xsd">
+
+    <PackageName>com.pravder.money.db.mithra</PackageName>
+    <ClassName>Transaction</ClassName>
+    <DefaultTable>TRANSACTION</DefaultTable>
+
+    <Attribute name="transactionId" javaType="int" columnName="id" primaryKey="true"
+               primaryKeyGeneratorStrategy="Max"/>
+    <Attribute name="accountId" javaType="String" columnName="customerId" nullable="false"/>
+    <Attribute name="debitCreditFlag" javaType="char" columnName="debitCreditFlag" nullable="false" maxLength="1"/>
+    <Attribute name="amount" javaType="BigDecimal" columnName="amount" nullable="false" precision="20" scale="5"/>
+    <Attribute name="currency" javaType="String" columnName="currency" nullable="false"/>
+    <Attribute name="businessDate" javaType="Timestamp" columnName="businessDate"/>
+    <Attribute name="counterParty" javaType="String" columnName="counterParty"/>
+    <Attribute name="source" javaType="String" columnName="source"/>
+    <Attribute name="comment" javaType="String" columnName="comment"/>
+
+</MithraObject>

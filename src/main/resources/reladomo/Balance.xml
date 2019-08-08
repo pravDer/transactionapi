@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<MithraObject objectType="transactional"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="mithraobject.xsd">
+
+    <PackageName>com.pravder.money.db.mithra</PackageName>
+    <ClassName>Balance</ClassName>
+    <DefaultTable>BALANCE</DefaultTable>
+
+    <Attribute name="accountId" javaType="String" columnName="customer_id" primaryKey="true"/>
+    <Attribute name="currency" javaType="String" columnName="currency" primaryKey="true"/>
+    <Attribute name="businessDate" javaType="Timestamp" columnName="business_date" primaryKey="true"/>
+    <Attribute name="balance" javaType="BigDecimal" columnName="balance" precision="20" scale="5"/>
+
+
+</MithraObject>

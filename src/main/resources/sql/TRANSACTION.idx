@@ -1,0 +1,2 @@
+alter table TRANSACTION add constraint TRANSACTION_PK primary key (id);
+

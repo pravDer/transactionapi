@@ -1,0 +1,12 @@
+
+<MithraRuntime>
+    <ConnectionManager
+            className="com.pravder.money.db.mithra.ReladomoConnectionManager">
+        <MithraObjectConfiguration
+                className="com.pravder.money.db.mithra.Account" cacheType="partial"/>
+        <MithraObjectConfiguration
+                className="com.pravder.money.db.mithra.Balance" cacheType="partial"/>
+        <MithraObjectConfiguration
+                className="com.pravder.money.db.mithra.Transaction" cacheType="partial"/>
+    </ConnectionManager>
+</MithraRuntime>

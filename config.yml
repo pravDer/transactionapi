@@ -1,0 +1,7 @@
+logging:
+  level: INFO
+  loggers:
+    com.pravder.money: DEBUG
+
+
+swaggerBasePath: http://localhost:9080

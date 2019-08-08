@@ -1,0 +1,8 @@
+{
+  "accountNumber" : "acct_123",
+  "money" :
+  {
+    "balance":"1000.0",
+    "currency":"USD"
+  }
+}

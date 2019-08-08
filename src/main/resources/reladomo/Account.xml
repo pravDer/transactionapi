@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<MithraObject objectType="transactional"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="mithraobject.xsd">
+
+    <PackageName>com.pravder.money.db.mithra</PackageName>
+    <ClassName>Account</ClassName>
+    <DefaultTable>ACCOUNT</DefaultTable>
+
+    <Attribute name="accountId" javaType="String" columnName="id" primaryKey="true"/>
+    <Attribute name="name" javaType="String" columnName="name" nullable="false"/>
+    <Attribute name="email" javaType="String" columnName="email" nullable="false"/>
+    <Attribute name="address" javaType="String" columnName="address" nullable="false"/>
+    <Attribute name="baseCcy" javaType="String" columnName="base_ccy" nullable="false"/>
+
+    <Relationship name="accountBalance" relatedObject="Balance" cardinality="one-to-many"
+                  reverseRelationshipName="account" >
+        this.accountId = Balance.accountId
+    </Relationship>
+
+    <Relationship name="accountTransaction" relatedObject="Transaction" cardinality="one-to-many"
+                  reverseRelationshipName="account" >
+        this.accountId = Transaction.accountId
+    </Relationship>
+
+    <Relationship name="accountBalanceForCurrency" relatedObject="Balance" cardinality="one-to-one"
+                  parameters="String currency">
+        this.accountId = Balance.accountId and
+        Balance.currency = {currency}
+    </Relationship>
+
+
+</MithraObject>

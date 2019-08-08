@@ -1,0 +1,15 @@
+class com.pravder.money.db.mithra.Account
+accountId, name, email, address, baseCcy
+"acct_1", "John", "John@Example.com", "Bangalore", "USD"
+"acct_2", "Paul", "Paul@Example.com", "London", "USD"
+
+class com.pravder.money.db.mithra.Balance
+accountId, currency, businessDate, balance
+"acct_1", "USD",  "2019-02-12 00:00:00.0", 200.00
+"acct_1", "GBP",  "2019-02-12 00:00:00.0", 100.00
+"acct_2", "USD",  "2019-02-12 00:00:00.0", 500.00
+"acct_2", "GBP",  "2019-02-12 00:00:00.0", 1000.00
+
+class com.pravder.money.db.mithra.Transaction
+transactionId, accountId, debitCreditFlag, amount, currency, businessDate, counterParty, source, comment
+1, "acct_1", "D", 100.00, "USD", "2019-08-19 00:00:00.00", "acct_2", "", ""

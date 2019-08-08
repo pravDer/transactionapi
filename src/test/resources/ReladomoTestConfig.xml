@@ -1,0 +1,13 @@
+
+<MithraRuntime>
+    <ConnectionManager
+            className="com.gs.fw.common.mithra.test.ConnectionManagerForTests">
+        <Property name="resourceName" value="testDb"></Property>
+        <MithraObjectConfiguration
+                className="com.pravder.money.db.mithra.Account" cacheType="partial"/>
+        <MithraObjectConfiguration
+                className="com.pravder.money.db.mithra.Balance" cacheType="partial"/>
+        <MithraObjectConfiguration
+                className="com.pravder.money.db.mithra.Transaction" cacheType="partial"/>
+    </ConnectionManager>
+</MithraRuntime>
