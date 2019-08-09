@@ -21,7 +21,6 @@ import javax.ws.rs.core.MediaType;
  * Api to get details on a account.
  */
 @Path("v1/account")
-@Api(value = "/hello", description = "Operations on the hello object")
 public class AccountResource {
 
 
